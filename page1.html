@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/x-icon" href="img/logo2.png">
+<title>KC3006 - Network Security</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="index.html" class="logo_link"><img class="logo" src="img/logo2.png" alt="logo" width="40" height="40"></a>
+			<nav>
+				<ul class="nav_links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="page1.html">1</a></li>
+					<li><a href="page2.html">2</a></li>
+					<li><a href="page3.html">3</a></li>
+				</ul>
+			</nav>
+		</header>
+		</header>
+		<nav></nav>
+		<main>
+			<div class="main_row1">
+				<div class="ns_title">
+					<h2 class="w_h2">Network Security</h2>
+				</div>
+			</div>
+			<br></br>
+			<div class="ns_row2">
+				<div class="ns_column">
+					<h2 class="w_h2">Introduction</h2>
+					<p class="all_p_text">This page will cover four main areas of Network Security, Firewalls, 
+					Network Access Control (NAC), Multifactor Authentication and Virtual Private Network (VPN). 
+					The firewall section will cover what a firewall is and how they are used. 
+					The NAC section will cover the specific use cases for network access control, and how it can be configured. 
+					The MFA section will outline different technologies used for MFA and how they are used within business. 
+					IoT will cover a variety of devices used within business and their security vulnerabilities. </p>
+				</div>
+			</div>
+			<br></br>
+			<div class="ns_row2">
+				<div class="ns_column1">
+					<h2 class="w_h2">Firewalls</h2>
+					<p class="all_p_text">A firewall sits between an internal network and the outside internet. It filters all traffic flowing to and from the network using security policies.</p>
+					<li class="ns_p_context"><a>A firewall uses ports to allow traffic in and out of the network. For example, HTTP and HTTPS, for web traffic, use port numbers 80 and 443.</a>
+					<li class="ns_p_context"><a>An enterprise level firewall use security policies that can be configured to allow or deny specific connections between one or more IP addresses.</a>
+					<li class="ns_p_context"><a>There are three main types of firewalls. Hardware based, which is a physical device in the network, 
+					software based which runs on a server and cloud based which is ran on a remote server.</a>
+					<li class="ns_p_context"><a>A VPN can be set up using a firewall that establishes a secure connection to a network. 
+					This can be accessed from outside of the network, 
+					for example the company PaloAlto had a VPN called Global Protect that allows businesses to gain access to their network from all around the county or world.</a>
+				</div>
+				<div class="ns_column1">
+					<a><img class="ns_column1_img_fw" src="img/firewall3.png" alt="logo"></a>
+				</div>
+			</div>
+			<br></br>
+			<div class="ns_row2">
+				<div class="ns_column1">
+					<h2 class="w_h2">Network Access Control (NAC)</h2>
+					<p class="all_p_text">Network Access Control restricts certain users and devices from accessing information that they are not authorized to access.</p>
+					<li class="ns_p_context"><a>NAC can be set up on a window server using Group Policy Objects (GPO) in conjunction with Active Directory (AD). 
+					A group is set up within AD with either users or computers, a GPO is then set up to give or deny specific access to either files or applications.</a>
+					<li class="ns_p_context"><a>NAC prevents users accessing either information or applications that they are not supposed to access. 
+					This is extremely useful when dealing with sensitive information, for example a company would not want all employees accessing their payroll files.</a>
+					<li class="ns_p_context"><a>This can also be used for external users that visit the business from time to time but do not need full access to the network. 
+					They may be able to connect to a VPN using given logins, this account would then have access to necessary files or applications through security policies.</a>
+				</div>
+				<div class="ns_column1">
+					<a><img class="ns_column1_img_fw" src="img/nac.png" alt="logo"></a>
+				</div>
+			</div>
+			<br></br>
+			<div class="ns_row2">
+				<div class="ns_column1">
+					<h2 class="w_h2">Multifactor Authentication (MFA)</h2>
+					<p class="all_p_text">Multifactor Authentication requires a user to verify a login using an external device such as a mobile phone. 
+					This provides an extra level of authentication as apposed to just using a password.</p>
+					<li class="ns_p_context"><a>One example of MFA is the mobile app DUO. Duo can be set up on to provide MFA on multiple different accounts 
+					and requires the user to either approve or deny a login attempt. </a>
+					<li class="ns_p_context"><a>MFA is vital in a business setting to make user accounts more secure. This prevents external attackers from 
+					using a password to gain access to the organisations data.</a>
+					<li class="ns_p_context"><a>A short string of digits can also be used to authenticate a user. For example with Microsoft Authenticator 
+					the app generates a six digit code to enter after the password.</a>
+				</div>
+				<div class="ns_column1">
+					<a><img class="ns_column1_img_fw" src="img/mfa.jpg" alt="logo"></a>
+				</div>
+			</div>
+			<br></br>
+			<div class="ns_row2">
+				<div class="ns_column1">
+					<h2 class="w_h2">Virtual Private Network (VPN)</h2>
+					<p class="all_p_text">A Virtual Private Network uses a secure connection between a device and a server to mask network activity over the network a device is connected to.</p>
+					<li class="ns_p_context"><a>This can be useful for when someone is connected to a public network an may be open to attacks </a>
+					<li class="ns_p_context"><a>In a business setting to connect two offices a VPN would be used so that each office can access the others network securely. This is known as a site-to-site VPN.</a>
+					<li class="ns_p_context"><a>The data is encrypted end-to-end. Meaning that the data is encrypted at one side and decrypted at the other side.</a>
+				</div>
+				<div class="ns_column1">
+					<a><img class="ns_column1_img_fw" src="img/vpn.png" alt="logo"></a>
+				</div>
+			</div>
+		</main>
+		<aside></aside>
+		<footer></footer>
+	</div>
+</body>
+</html
